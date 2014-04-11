@@ -500,12 +500,6 @@
         this.createViewMore();
 
         if (this.bNeedViewMore && !this.bNotViewMore) {
-            if (oElement.lastChild.nodeName == "P" ) {
-                oElement.lastChild.appendChild(doc.createTextNode("..."));
-            } else {
-                oElement.appendChild(doc.createTextNode("..."));
-            }
-            oElement.appendChild(doc.createElement("br"));
             oElement.appendChild(this.oViewMore);
             this.setBehaviour();
         }
